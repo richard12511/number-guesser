@@ -18,7 +18,7 @@ let minBoundary = 1;
 let maxBoundary = 100;
 
 export default function GameScreen({ pickedNumber, gameOverHandler }) {
-  const initialGuess = generateRandomBetween(minBoundary, maxBoundary, pickedNumber);
+  const initialGuess = generateRandomBetween(1, 100, pickedNumber);
   const [currentGuess, setCurrentGuess] = useState(initialGuess);
 
   useEffect(() => {
